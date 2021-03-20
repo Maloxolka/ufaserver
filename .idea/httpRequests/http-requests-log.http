@@ -3,6 +3,351 @@ Content-Type: application/json
 
 {
   "v": "2.0",
+  "method": "getMonthRoomEvents",
+  "params": {
+    "id_room": 4
+  }
+}
+
+<> 2021-03-21T060325.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMonthRoomEvents",
+  "params": {
+    "id_room": 4
+  }
+}
+
+<> 2021-03-21T060240.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMonthRoomEvents",
+  "params": {
+    "id_room": 4
+  }
+}
+
+<> 2021-03-21T055949.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054732.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054718.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054623.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054554.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054424.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054257.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T054027.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T053923.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T053610.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T053537.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 5
+  }
+}
+
+<> 2021-03-21T053222.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T052802.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T052732.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAsMemberEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T052614.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMyEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T050645.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMyEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T050600.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMyEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T050154.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getMyEvents",
+  "params": {
+    "id_user": 2
+  }
+}
+
+<> 2021-03-21T050043.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "getAllTags",
+  "params": {
+  }
+}
+
+<> 2021-03-21T043514.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/Admin/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "changeTag",
+  "params": {
+    "tag": "big",
+    "new_tag": "large"
+  }
+}
+
+<> 2021-03-21T043119.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
   "method": "addEvent",
   "params": {
     "id_user": 1,
@@ -544,368 +889,6 @@ Content-Type: application/json
 }
 
 <> 2021-03-21T013216.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T124347.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T124323.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T124004.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123945.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123709.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123532.200.html
-
-###
-
-POST http://localhost/cyber_hack/bin/Dota2/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getTournamentList",
-  "params": {}
-}
-
-<> 2021-03-21T123501.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123426.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123345.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123338.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "getRooms",
-  "params": {
-  }
-}
-
-<> 2021-03-21T123321.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addMember",
-  "params": {
-    "id_event": 2,
-    "name": "Henryz",
-    "sname": "Heinzz",
-    "email": "food@bar.com"
-  }
-}
-
-<> 2021-03-21T123002.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addMember",
-  "params": {
-    "id_event": 2,
-    "name": "Henry",
-    "sname": "Heinz",
-    "email": "foo@bar.com"
-  }
-}
-
-<> 2021-03-20T074756.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "deleteReview",
-  "params": {
-    "id_review": 4
-  }
-}
-
-<> 2021-03-20T074629.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addReview",
-  "params": {
-    "id_room": 4,
-    "description": "lol"
-  }
-}
-
-<> 2021-03-20T074544.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addEvent",
-  "params": {
-    "id_room": 4,
-    "id_user": 4,
-    "start": "2021-03-20 19:40:04",
-    "end": "2021-03-20 21:40:04",
-    "info": "new event",
-    "description": "best event"
-  }
-}
-
-<> 2021-03-20T074459.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addEvent",
-  "params": {
-    "id_room": 4,
-    "id_user": 4,
-    "start": "2021-03-20 19:40:04",
-    "end": "2021-03-20 21:40:04",
-    "info": "new event",
-    "description": "best event"
-  }
-}
-
-<> 2021-03-20T074204.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/User/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addEvent",
-  "params": {
-    "id_room": 4,
-    "id_user": 4,
-    "start": "2021-03-20 19:40:04",
-    "end": "2021-03-20 21:40:04",
-    "info": "new event",
-    "description": "best event"
-  }
-}
-
-<> 2021-03-20T074115.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/Admin/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addEvent",
-  "params": {
-    "id_room": 4,
-    "id_user": 4,
-    "start": "2021-03-20 19:40:04",
-    "end": "2021-03-20 21:40:04",
-    "info": "new event",
-    "description": "best event"
-  }
-}
-
-<> 2021-03-20T074108.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/Admin/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "removeTag",
-  "params": {
-    "id_room": 4,
-    "tag": "clear"
-  }
-}
-
-<> 2021-03-20T073811.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/Admin/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "giveTag",
-  "params": {
-    "id_room": 4,
-    "tag": "clear"
-  }
-}
-
-<> 2021-03-20T073751.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/Admin/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "deleteTag",
-  "params": {
-    "tag": "vc"
-  }
-}
-
-<> 2021-03-20T073652.200.html
-
-###
-
-POST http://localhost/ufaserver/bin/Admin/index.php
-Content-Type: application/json
-
-{
-  "v": "2.0",
-  "method": "addTag",
-  "params": {
-    "tag": "vc"
-  }
-}
-
-<> 2021-03-20T073629.200.html
 
 ###
 

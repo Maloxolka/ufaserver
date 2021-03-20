@@ -83,6 +83,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     echo error(ERR_INVALID_PARAMS, $method);
                 }
+            } elseif ($method == "getAllTags") {
+                if (true) {
+                    echo $methods->getAllTags();
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
+            } elseif ($method == "getMyEvents") {
+                if (true) {
+                    echo $methods->getMyEvents($params);
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
+            } elseif ($method == "getAsMemberEvents") {
+                if (true) {
+                    echo $methods->getAsMemberEvents($params);
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
+            } elseif ($method == "getMonthRoomEvents") {
+                if (true) {
+                    echo $methods->getMonthRoomEvents($params);
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
             } else {
                 echo error(ERR_METHOD_NOT_FOUND, $method);
             }

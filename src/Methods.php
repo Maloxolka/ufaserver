@@ -121,5 +121,35 @@ class Methods {
 
         return $this->rpc->makeResultResponse($db->getRooms($data));
     }
+    public function changeTag($data)
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->changeTag($data));
+    }
+    public function getMyEvents($data)
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->getMyEvents($data));
+    }
+    public function getAsMemberEvents($data)
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->getAsMemberEvents($data));
+    }
+    public function getMonthRoomEvents($data)
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->getMonthRoomEvents($data));
+    }
+    public function getAllTags()
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->getAllTags());
+    }
 
 }

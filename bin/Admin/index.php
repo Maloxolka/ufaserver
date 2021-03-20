@@ -65,6 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     echo error(ERR_INVALID_PARAMS, $method);
                 }
+            } elseif ($method == "changeTag") {
+                if (true) {
+                    echo $methods->changeTag($params);
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
             } elseif ($method == "removeTag") {
                 if (true) {
                     echo $methods->removeTag($params);

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b707fb-381e-4734-a2b6-c89375815feb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-03-20T055311.200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-03-20T055421.200.html" beforeDir="false" />
+    <list default="true" id="42b707fb-381e-4734-a2b6-c89375815feb" name="Default Changelist" comment="new content">
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/User/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/bin/User/errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/User/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/User/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/DBOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DBOperations.php" afterDir="false" />
@@ -25,6 +24,11 @@
     <fileColor scope="Android Instrumented Tests" color="#2c3436" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -71,6 +75,166 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;getMonthRoomEvents&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_room&quot;: 4&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;getAsMemberEvents&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 5&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;getAsMemberEvents&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 2&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;getMyEvents&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 2&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;getAllTags&quot;,&#10;  &quot;params&quot;: {&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/Admin/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;changeTag&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;tag&quot;: &quot;big&quot;,&#10;    &quot;new_tag&quot;: &quot;large&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;addEvent&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 1,&#10;    &quot;id_room&quot;: 4,&#10;    &quot;start&quot;: &quot;2021-03-21 18:27:26&quot;,&#10;    &quot;end&quot;: &quot;2021-03-21 19:27:27&quot;,&#10;    &quot;info&quot;: &quot;dsaddddss&quot;,&#10;    &quot;description&quot;: &quot;fdsfsddddqq&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;addEvent&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 1,&#10;    &quot;id_room&quot;: 4,&#10;    &quot;start&quot;: &quot;2021-03-21 17:27:27&quot;,&#10;    &quot;end&quot;: &quot;2021-03-21 18:27:27&quot;,&#10;    &quot;info&quot;: &quot;dsaddddss&quot;,&#10;    &quot;description&quot;: &quot;fdsfsddddqq&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;updateEvent&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_user&quot;: 1,&#10;    &quot;id_room&quot;: 4,&#10;    &quot;start&quot;: &quot;2021-03-21 17:27:27&quot;,&#10;    &quot;end&quot;: &quot;2021-03-21 18:27:27&quot;,&#10;    &quot;info&quot;: &quot;dsaddddss&quot;,&#10;    &quot;description&quot;: &quot;fdsfsddddqq&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;updateEvent&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;id_event&quot;: 10,&#10;    &quot;start&quot;: &quot;2021-03-21 16:57:27&quot;,&#10;    &quot;end&quot;: &quot;2021-03-21 17:27:27&quot;,&#10;    &quot;info&quot;: &quot;dsaddddss&quot;,&#10;    &quot;description&quot;: &quot;fdsfsddddqq&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
@@ -673,7 +837,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616160994412</updated>
       <workItem from="1616160995480" duration="11100000" />
-      <workItem from="1616219250889" duration="32994000" />
+      <workItem from="1616219250889" duration="39400000" />
     </task>
     <task id="LOCAL-00001" summary="auto add tags">
       <created>1616243122587</created>
@@ -689,7 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616244527055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new content">
+      <created>1616274504042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616274504042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,13 +869,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="auto add tags" />
     <MESSAGE value="fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+    <MESSAGE value="new content" />
+    <option name="LAST_COMMIT_MESSAGE" value="new content" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1616244525865">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1616274544614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616244525865" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616274544614" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1616239443213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -713,22 +885,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="603" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616239455013" />
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1616274172843">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1616281189001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616274172843" />
-    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1616274172842">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616281189001" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1616281189001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616274172842" />
-    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1616274172842">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616281189001" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1616281189001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616274172842" />
-    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1616274172842">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616281189001" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1616281189001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616274172842" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616281189001" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1616210627268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -737,10 +909,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616168320900" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616244528404">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616274547856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616244528404" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616274547856" />
     <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1616242987451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

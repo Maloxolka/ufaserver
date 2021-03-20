@@ -515,5 +515,157 @@ class DBOperations {
         return false;
     }
 
+    public function getAllTags() {
+        $sql = 'SELECT tag FROM tags';
 
+        $query = $this->conn->prepare($sql);
+        $query->execute();
+
+        if ($query) {
+            return $query->fetchAll();
+        }
+
+        return false;
+    }
+
+    public function getMyEvents($data) {
+        $sql = 'SELECT * FROM events1
+                INNER JOIN users ON events1.id_user = users.id
+                INNER JOIN rooms ON events1.id_room = rooms.id
+                WHERE users.id = :id_user';
+
+
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':id_user' => $data->id_user
+            )
+        );
+
+        $result = $query->fetchAll();
+
+        $count = count($result);
+        for($i = 0; $i<$count; $i++) {
+
+            $sql = 'SELECT * FROM members WHERE id_event = :id_event';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id_event' => $result[$i][0]
+                )
+            );
+
+            $result[$i]["members"] = $query->fetchAll();
+            $result[$i]["start"] = date_format(date_create($result[$i]["start"]), 'j F Y H:i');
+            $result[$i]["end"] = date_format(date_create($result[$i]["end"]), 'j F Y H:i');
+        }
+
+        if ($query) {
+            return $result;
+        }
+
+        return false;
+    }
+
+    public function getAsMemberEvents($data) {
+        $sql = 'SELECT * FROM users WHERE id = :id';
+
+
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':id' => $data->id_user
+            )
+        );
+
+        $raw = $query->fetchObject();
+
+        $sql = 'SELECT id_event FROM members WHERE email = :email';
+
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':email' => $raw->email
+            )
+        );
+
+        $raw = $query->fetchAll();
+
+        $result = $raw;
+        $count = count($raw);
+        for($i = 0; $i<$count; $i++) {
+
+            $sql = 'SELECT * FROM events1
+                INNER JOIN users ON events1.id_user = users.id
+                INNER JOIN rooms ON events1.id_room = rooms.id
+                WHERE events1.id = :id_event';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id_event' => $raw[$i]["id_event"]
+                )
+            );
+
+            $buf = $query->fetchAll();
+            $result[$i] = $buf[0];
+            $result[$i]["start"] = date_format(date_create($result[$i]["start"]), 'j F Y H:i');
+            $result[$i]["end"] = date_format(date_create($result[$i]["end"]), 'j F Y H:i');
+
+            $sql = 'SELECT * FROM members WHERE id_event = :id_event';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id_event' => $result[$i][0]
+                )
+            );
+
+            $result[$i]["members"] = $query->fetchAll();
+        }
+
+        if ($query) {
+            return $result;
+        }
+
+        return false;
+    }
+
+    public function getMonthRoomEvents($data) {
+        $sql = 'SELECT * FROM events1 
+                INNER JOIN users ON events1.id_user = users.id
+                INNER JOIN rooms ON events1.id_room = rooms.id
+                WHERE id_room = :id_room AND start > "'.date('Y-m-d H:i:s').'" AND end < "'.date('Y-m-d H:i:s', strtotime("+4 week")).'"';
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':id_room' => $data->id_room
+            )
+        );
+
+        $table = $query->fetchAll();
+        $count = count($table);
+        for($i = 0; $i<$count; $i++) {
+            $sql = 'SELECT * FROM members WHERE id_event = :id_event';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id_event' => $table[$i][0]
+                )
+            );
+
+            $table[$i]["members"] = $query->fetchAll();
+
+            $table[$i]["start"] = date_format(date_create($table[$i]["start"]), 'j F Y H:i');
+            $table[$i]["end"] = date_format(date_create($table[$i]["end"]), 'j F Y H:i');
+        }
+
+        if ($query) {
+            return $table;
+        }
+
+        return false;
+    }
 }
