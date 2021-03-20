@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b707fb-381e-4734-a2b6-c89375815feb" name="Default Changelist" comment="" />
+    <list default="true" id="42b707fb-381e-4734-a2b6-c89375815feb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/User/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/bin/User/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DBOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DBOperations.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,9 @@
   <component name="FileColors">
     <fileColor scope="Local Unit Tests" color="#2c3436" />
     <fileColor scope="Android Instrumented Tests" color="#2c3436" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -33,6 +41,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1pygxdgBaRDCUmifvsGPEDa1CYp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,6 +67,38 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/Admin/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;addRoom&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;number&quot;:354,&#10;    &quot;floor&quot;:3,&#10;    &quot;type&quot;:&quot;Common&quot;,&#10;    &quot;area&quot;:12.0,&#10;    &quot;max&quot;:4,&#10;    &quot;tags&quot;: [&quot;big&quot;,&quot;clear&quot;,&quot;old&quot;]&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;v&quot;: &quot;2.0&quot;,&#10;  &quot;method&quot;: &quot;addRoom&quot;,&#10;  &quot;params&quot;: {&#10;    &quot;number&quot;:354,&#10;    &quot;floor&quot;:3,&#10;    &quot;type&quot;:&quot;Common&quot;,&#10;    &quot;area&quot;:12.0,&#10;    &quot;max&quot;:4,&#10;    &quot;tags&quot;: [&quot;big&quot;,&quot;clear&quot;,&quot;old&quot;]&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost/ufaserver/bin/User/index.php" />
@@ -96,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616160994412</updated>
       <workItem from="1616160995480" duration="11100000" />
-      <workItem from="1616219250889" duration="15137000" />
+      <workItem from="1616219250889" duration="17312000" />
     </task>
     <servers />
   </component>
@@ -104,22 +145,30 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1616237661024">
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1616239443213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616237661024" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1616237661023">
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1616239443213" />
+    <state x="603" y="117" key="Github.UntrackedFilesDialog" timestamp="1616239455013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616237661023" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1616237661023">
+    <state x="603" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616239455013" />
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom" timestamp="1616242901733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616237661023" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1616237661024">
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616242901733" />
+    <state width="1493" height="184" key="GridCell.Tab.0.center" timestamp="1616242901732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616237661024" />
+    <state width="1493" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616242901732" />
+    <state width="1493" height="184" key="GridCell.Tab.0.left" timestamp="1616242901732">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616242901732" />
+    <state width="1493" height="184" key="GridCell.Tab.0.right" timestamp="1616242901733">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616242901733" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1616210627268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -128,5 +177,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616168320900" />
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1616242546080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616242546080" />
   </component>
 </project>

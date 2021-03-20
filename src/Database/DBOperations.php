@@ -94,7 +94,7 @@ class DBOperations {
     }
 
     public function addRoom($data) {
-        $sql = 'INSERT INTO rooms SET number = :number, floor = :floor, type = :type, area = :area, vc = :vc, mic = :mic, wifi = :wifi, led = :led, max = :max';
+        $sql = 'INSERT INTO rooms SET number = :number, floor = :floor, type = :type, area = :area, room_limit = :room_limit';
 
         $query = $this->conn->prepare($sql);
         $query->execute(
@@ -103,13 +103,33 @@ class DBOperations {
                 ':floor' => $data->floor,
                 ':type' => $data->type,
                 ':area' => $data->area,
-                ':vc' => $data->vc,
-                ':mic' => $data->mic,
-                ':wifi' => $data->wifi,
-                ':led' => $data->led,
-                ':max' => $data->max,
+                ':room_limit' => $data->room_limit,
             )
         );
+
+        $sql = 'SELECT * FROM rooms WHERE number = :number AND floor = :floor AND type = :type AND area = :area AND room_limit = :room_limit';
+
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':number' => $data->number,
+                ':floor' => $data->floor,
+                ':type' => $data->type,
+                ':area' => $data->area,
+                ':room_limit' => $data->room_limit,
+            )
+        );
+
+        $raw = $query->fetchObject();
+        $container["id_room"] = $raw->id;
+
+        $tags = $data->tags;
+        $count = count($tags);
+
+        for ($i = 0; $i<$count; $i++) {
+            $container["tag"] = $tags[$i];
+            $this->giveTag((object) $container);
+        }
 
         if ($query) {
             return true;
@@ -119,7 +139,7 @@ class DBOperations {
     }
 
     public function updateRoom($data) {
-        $sql = 'UPDATE rooms SET number = :number, floor = :floor, type = :type, area = :area, vc = :vc, mic = :mic, wifi = :wifi, led = :led, max = :max WHERE id = :id';
+        $sql = 'UPDATE rooms SET number = :number, floor = :floor, type = :type, area = :area, room_limit = :room_limit WHERE id = :id';
 
         $query = $this->conn->prepare($sql);
         $query->execute(
@@ -128,11 +148,7 @@ class DBOperations {
                 ':floor' => $data->floor,
                 ':type' => $data->type,
                 ':area' => $data->area,
-                ':vc' => $data->vc,
-                ':mic' => $data->mic,
-                ':wifi' => $data->wifi,
-                ':led' => $data->led,
-                ':max' => $data->max,
+                ':room_limit' => $data->room_limit,
             )
         );
 
