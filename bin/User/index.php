@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             } elseif ($method == "getRooms") {
                 if (true) {
-                    echo $methods->getRooms();
+                    echo $methods->getRooms($params);
                 } else {
                     echo error(ERR_INVALID_PARAMS, $method);
                 }

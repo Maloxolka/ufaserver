@@ -115,11 +115,11 @@ class Methods {
 
         return $this->rpc->makeResultResponse($db->addMember($data));
     }
-    public function getRooms()
+    public function getRooms($data)
     {
         $db = $this->db;
 
-        return $this->rpc->makeResultResponse($db->getRooms());
+        return $this->rpc->makeResultResponse($db->getRooms($data));
     }
 
 }

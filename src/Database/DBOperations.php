@@ -211,6 +211,23 @@ class DBOperations {
         return false;
     }
 
+    public function changeTag($data) {
+        $sql = 'UPDATE tags SET tag = "'.$data->new_tag.'" WHERE tag = :tag';
+
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':tag' => $data->tag
+            )
+        );
+
+        if ($query) {
+            return true;
+        }
+
+        return false;
+    }
+
     public function giveTag($data) {
         $sql = 'SELECT id FROM tags WHERE tag = :tag';
 
@@ -273,50 +290,115 @@ class DBOperations {
 
     public function addEvent($data) {
 
-        $sql = 'INSERT INTO user_events SET id_user = :id_user, id_room = :id_room, start = :start, end = :end, info = :info, description = :description';
-
+        $sql = 'SELECT * FROM events1 WHERE id_room = :id_room AND start > "'.date('Y-m-d H:i:s').'"';
         $query = $this->conn->prepare($sql);
         $query->execute(
             array(
-                ':id_user' => $data->id_user,
-                ':id_room' => $data->id_room,
-                ':start' => $data->start,
-                ':end' => $data->end,
-                ':info' => $data->info,
-                ':description' => $data->description
+                ':id_room' => $data->id_room
             )
         );
 
-        if ($query) {
-            return true;
+        $table = $query->fetchAll();
+
+        $flag = 0;
+        $count = count($table);
+
+        for ($i = 0; $i<$count; $i++) {
+            if (strtotime($data->start) >= strtotime($table[$i]["end"]) || strtotime($data->end) <= strtotime($table[$i]["start"])) {
+
+            } else {
+                $flag = 1;
+            }
         }
 
+        if ($flag != 1) {
+            $start = date_format(date_create($data->start), 'Y-m-d H:i:s');
+            $end = date_format(date_create($data->end), 'Y-m-d H:i:s');
+            $sql = 'INSERT INTO events1 SET id_user = :id_user, id_room = :id_room, start = :start, end = :end, info = :info, description = :description';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id_user' => $data->id_user,
+                    ':id_room' => $data->id_room,
+                    ':start' => $start,
+                    ':end' => $end,
+                    ':info' => $data->info,
+                    ':description' => $data->description
+                )
+            );
+
+            if ($query) {
+                return true;
+            }
+
+            return false;
+        }
         return false;
     }
 
     public function updateEvent($data) {
-        $sql = 'UPDATE user_events SET start = :start, end = :end, info = :info, description = :description  WHERE id = :id';
 
+        $sql = 'SELECT * FROM events1 WHERE id = :id';
+        $query = $this->conn->prepare($sql);
+        $query->execute(
+            array(
+                ':id' => $data->id_event
+            )
+        );
+
+        $raw = $query->fetchObject();
+        $id_room = $raw->id_room;
+
+        $sql = 'SELECT * FROM events1 WHERE NOT (id = :id) AND id_room = :id_room AND start > "'.date('Y-m-d H:i:s').'"';
         $query = $this->conn->prepare($sql);
         $query->execute(
             array(
                 ':id' => $data->id_event,
-                ':start' => $data->start,
-                ':end' => $data->end,
-                ':info' => $data->info,
-                ':description' => $data->description
+                ':id_room' => $id_room
             )
         );
 
-        if ($query) {
-            return true;
+        $table = $query->fetchAll();
+
+        $flag = 0;
+        $count = count($table);
+
+        for ($i = 0; $i<$count; $i++) {
+            if (strtotime($data->start) >= strtotime($table[$i]["end"]) || strtotime($data->end) <= strtotime($table[$i]["start"])) {
+
+            } else {
+                $flag = 1;
+            }
         }
 
+        if ($flag != 1) {
+            $start = date_format(date_create($data->start), 'Y-m-d H:i:s');
+            $end = date_format(date_create($data->end), 'Y-m-d H:i:s');
+            $sql = 'UPDATE events1 SET start = :start, end = :end, info = :info, description = :description  WHERE id = :id';
+
+            $query = $this->conn->prepare($sql);
+            $query->execute(
+                array(
+                    ':id' => $data->id_event,
+                    ':start' => $start,
+                    ':end' => $end,
+                    ':info' => $data->info,
+                    ':description' => $data->description
+                )
+            );
+
+            if ($query) {
+                return true;
+            }
+
+            return false;
+        }
         return false;
     }
 
     public function deleteEvent($data) {
-        $sql = 'DELETE FROM user_events WHERE id = :id';
+        $sql = 'DELETE FROM events1 WHERE id = :id';
 
         $query = $this->conn->prepare($sql);
         $query->execute(
@@ -387,8 +469,39 @@ class DBOperations {
         return false;
     }
 
-    public function getRooms() {
-        $sql = 'SELECT * FROM rooms';
+    public function getRooms($data) {
+        $tags = $data->tags;
+        $type = $data->type;
+        $floor = $data->floor;
+        $left_lim = $data->left_lim;
+        $right_lim = $data->right_lim;
+        $filter = $data->filter;
+        $page = $data->page;
+
+        $count = count($tags);
+        $where_sql = '';
+        if ($count > 0) {
+            $where_sql .= 'tag IN ( "'.$tags[0].'" ';
+
+            for ($i = 1; $i < $count; $i++) {
+                $where_sql .= ',"'.$tags[$i].'" ';
+            }
+
+            $where_sql .= ') AND ';
+        }
+        $where_sql .= 'type = "'. $type . '" AND ';
+        $where_sql .= 'floor = '. $floor . ' AND ';
+        $where_sql .= 'room_limit >= '. $left_lim . ' AND ';
+        $where_sql .= 'room_limit <= '. $right_lim . ' ';
+
+        $sql = 'SELECT id_room, floor, type, number, area FROM room_tags 
+                INNER JOIN rooms ON room_tags.id_room = rooms.id
+                INNER JOIN tags ON room_tags.id_tag = tags.id
+                WHERE '.$where_sql.'
+                GROUP BY id_room
+                HAVING COUNT(*) >= "'.$count.'"
+                ORDER BY '.$filter.'
+                LIMIT 10 OFFSET '.(($page-1)*10).' ';
 
         $query = $this->conn->prepare($sql);
         $query->execute();
@@ -401,4 +514,6 @@ class DBOperations {
 
         return false;
     }
+
+
 }
