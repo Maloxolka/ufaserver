@@ -10,5 +10,9 @@ return [
     'api' => [
         'v' => '2.0',
         'url' => (!empty($_SERVER['HTTPS']) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST']."/"
+    ],
+    'google_mail' => [
+        'email' => 'simrakss71@gmail.com',
+        'password' => 'zhmfilglnhihxrwq',
     ]
 ];

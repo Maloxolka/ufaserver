@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo error(ERR_PARSE);
     }
 } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    echo "User module ready";
+    echo "Admin module ready";
 }
 
 

@@ -1,4 +1,5 @@
 <?php
+
 require_once '../../src/Methods.php';
 require_once '../../src/Check/DataCheck.php';
 require_once '../../src/RPC/JSON_RPC.php';
@@ -14,8 +15,6 @@ function error($error, $method = "empty") {
     global $rpc;
     return $rpc->makeErrorResponse("index.php", $error, $method);
 }
-
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
