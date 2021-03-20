@@ -1,0 +1,46 @@
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "addRoom",
+  "params": {
+    "number":333,
+    "floor":3,
+    "type":"Common",
+    "area":12.0,
+    "vc":1,
+    "mic":1,
+    "wifi":1,
+    "led":1,
+    "max":4
+  }
+}
+
+<> 2021-03-20T055421.200.html
+
+###
+
+POST http://localhost/ufaserver/bin/User/index.php
+Content-Type: application/json
+
+{
+  "v": "2.0",
+  "method": "addRoom",
+  "params": {
+    "number":333,
+    "floor":3,
+    "type":"Common",
+    "area":12.0,
+    "vc":1,
+    "mic":1,
+    "wifi":1,
+    "led":1,
+    "max":4
+  }
+}
+
+<> 2021-03-20T055311.200.html
+
+###
+
