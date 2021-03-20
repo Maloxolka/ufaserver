@@ -149,6 +149,7 @@ class DBOperations {
                 ':type' => $data->type,
                 ':area' => $data->area,
                 ':room_limit' => $data->room_limit,
+                ':id' => $data->id_room
             )
         );
 
@@ -280,7 +281,7 @@ class DBOperations {
                 ':id_user' => $data->id_user,
                 ':id_room' => $data->id_room,
                 ':start' => $data->start,
-                ':end' => $data->room,
+                ':end' => $data->end,
                 ':info' => $data->info,
                 ':description' => $data->description
             )
@@ -301,7 +302,7 @@ class DBOperations {
             array(
                 ':id' => $data->id_event,
                 ':start' => $data->start,
-                ':end' => $data->room,
+                ':end' => $data->end,
                 ':info' => $data->info,
                 ':description' => $data->description
             )

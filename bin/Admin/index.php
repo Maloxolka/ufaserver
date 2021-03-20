@@ -41,6 +41,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     echo error(ERR_INVALID_PARAMS, $method);
                 }
+            } elseif ($method == "deleteRoom") {
+                if (true) {
+                    echo $methods->deleteRoom($params);
+                } else {
+                    echo error(ERR_INVALID_PARAMS, $method);
+                }
             } elseif ($method == "addTag") {
                 if (true) {
                     echo $methods->addTag($params);

@@ -49,6 +49,12 @@ class Methods {
 
         return $this->rpc->makeResultResponse($db->updateRoom($data));
     }
+    public function deleteRoom($data)
+    {
+        $db = $this->db;
+
+        return $this->rpc->makeResultResponse($db->deleteRoom($data));
+    }
     public function addTag($data)
     {
         $db = $this->db;

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $method = $raw_data->method;
             if ($method == "register") {
                 if (true) {
-                    echo $methods->register();
+                    echo $methods->register($params);
                 } else {
                     echo error(ERR_INVALID_PARAMS, $method);
                 }
